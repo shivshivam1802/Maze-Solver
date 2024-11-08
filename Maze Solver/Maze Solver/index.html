@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="maze-container">
+            <div id="maze"></div>
+        </div>
+        <div id="controls">
+            <select id="algorithmSelect">
+                <option value="bfs">Breadth-First Search (BFS)</option>
+                <option value="dfs">Depth-First Search (DFS)</option>
+                <option value="astar">A* Search</option>
+            </select>
+            <button id="solve">Solve</button>
+            <button id="restart">Restart</button>
+            <div id="scoreboard">
+                Paths Found: <span id="pathCount">0</span>
+            </div>
+        </div>
+        <div id="winMessage">Maze Solved.!</div>
+        <div id="noPathMessage">No Path Found!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
